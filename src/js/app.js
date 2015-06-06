@@ -40,6 +40,7 @@ $(document).ready(function() {
       title: ''
     };
 
+    var replacePattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
     spreadsheet.feed.entry.forEach(function(entry) {
       // Parse item data
       var item = {};
@@ -50,6 +51,9 @@ $(document).ready(function() {
         case 'instagram':
           item.title = 'Nouvelle photo sur Instagram';
           item.content = '<img src="' + item.content + '">';
+          if(item.extra) {
+            item.content += '<br>' + item.extra;
+          }
         break;
         case 'soundcloud':
           item.title = 'Nouveau favori sur Soundcloud';
@@ -57,8 +61,12 @@ $(document).ready(function() {
         break;
         case 'twitter':
           item.title = 'Nouveau tweet';
-          var replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
-          item.content = item.content.replace(replacePattern1, '<a href="$1" target="_blank">$1</a>');
+          item.content = item.content.replace(replacePattern, '<a href="$1" target="_blank">$1</a>');
+        break;
+        case 'rss':
+          item.title = 'Article de blog: ' + item.content;
+          item.content = item.extra;
+          item.content = item.content.replace(replacePattern, '<a href="$1" target="_blank">$1</a>');
         break;
         default :
 
