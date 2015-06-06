@@ -60,7 +60,7 @@ $(document).ready(function() {
           item.content = item.content + '<br><img src="' + item.extra + '">';
         break;
         case 'twitter':
-          item.title = 'Nouveau tweet';
+          item.title = '';
           item.content = item.content.replace(replacePattern, '<a href="$1" target="_blank">$1</a>');
         break;
         case 'rss':

@@ -205,6 +205,10 @@ footer {
   }
   h2 {
     color: #303e49;
+    margin-bottom: 1em;
+    &:empty {
+      display: none;
+    }
   }
   a {
     color: #303e49;
@@ -217,12 +221,19 @@ footer {
     display: inline-block;
   }
   .content {
-    margin: 1em 0;
+    margin: 0;
     line-height: 1.6;
   }
   .read-more {
     float: right;
     padding: .8em 0;
+    text-decoration: underline;
+    span {
+      text-transform: capitalize;
+    }
+    &:hover {
+      color: @link-color;
+    }
   }
   .date {
     float: left;
