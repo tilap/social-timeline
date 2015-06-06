@@ -7,8 +7,8 @@ var root = __dirname,
 module.exports = {
     contentdata: {
         app: {
-            name: 'Frast',
-            description: 'Fast frontend mockup',
+            name: 'Social Timeline',
+            description: 'Social timeline share your last social network activities',
             copyright: {
                 name: 'Tilap',
                 url : 'http://tilap.net/',
@@ -21,7 +21,7 @@ module.exports = {
             googleplus: 'https://plus.google.com/u/0/100500349692608932832/posts'
         },
         github: {
-            url: 'http://github.com/tilap/frast/'
+            url: 'http://github.com/tilap/social-timeline/'
         }
     },
     server: {
