@@ -12,7 +12,7 @@ module.exports = {
             copyright: {
                 name: 'Tilap',
                 url : 'http://tilap.net/',
-                date: 'September 2014'
+                date: 'June 2015'
             }
         },
         author: {
