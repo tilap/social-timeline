@@ -13,11 +13,9 @@
     "description" : "<%- app.description %>"
 })
 
-    <!-- fonticon sample -->
     <link rel="stylesheet" href="fonts/fontello/css/frast.css" type='text/css' media='all' />
 
-    <!-- google font for example -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- build:css stylesheet/style.css -->
     <link rel="stylesheet" href="../../tmp/stylesheet/stylesheet.css" />
@@ -25,11 +23,33 @@
 </head>
 <body>
 
-Hello world !
+    <header>
+        <h1>Timeline</h1>
+    </header>
+    <div class="message">Chargement en cours...</div>
+    <section id="timeline" class="container">
+    </section>
 
-<!-- build:js js/bundle.js -->
-<script src="../../tmp/js/app.js"></script>
-<!-- endbuild -->
+    <div id="item-template" style="display: none">
+        <div class="timeline-block source-{{source}}">
+            <div class="timeline-img {{source}}">
+                <i class="icon-{{source}}">
+            </div>
+            <div class="timeline-content">
+                <h2>{{title}}</h2>
+                <div class="content">{{content}}</div>
+                <a href="{{url}}" target="_blank" class="read-more">Source</a>
+                <span class="date">{{date}}</span>
+            </div>
+        </div>
+    </div>
 
+    <footer>
+        Timeline automatically built with <a href="https://ifttt.com/" target="_blank">IFTTT</a>, <a href="https://docs.google.com/">Google Spreadsheet</a> and a bit of code fastly built with <a href="http://tilap.github.io/frast/" target="_blank">Frast</a>.
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- build:js js/bundle.js -->
+    <script src="../../tmp/js/app.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

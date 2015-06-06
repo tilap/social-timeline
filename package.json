@@ -1,21 +1,21 @@
 {
-  "name": "frast",
-  "description": "Basic frontend page builder over gulp",
-  "version": "0.1.2",
+  "name": "social-timeline",
+  "description": "One hour project",
+  "version": "0.1.0",
   "homepage": "",
-  "repository": "tilap/frast",
+  "repository": "tilap/social-timeline",
   "author": "Tilap <jlavinh@gmail.com> (http://tilap.net)",
   "tags": [
     "gulp",
     "frontend"
   ],
   "bug": {
-    "url": "http://github.com/tilap/frast/issues"
+    "url": "http://github.com/tilap/social-timeline/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/tilap/frast/master/LICENCE"
+      "url": "https://raw.githubusercontent.com/tilap/social-timeline/master/LICENCE"
     }
   ],
   "dependencies": {
@@ -40,9 +40,9 @@
     "gulp-prompt": "0.1.x",
     "gulp-rev": "1.1.x",
     "gulp-rimraf": "0.1.x",
-    "gulp.spritesmith": "1.4.x",
     "gulp-uglify": "1.0.x",
     "gulp-usemin": "0.3.x",
+    "gulp.spritesmith": "1.4.x",
     "markdown": "0.5.x",
     "mkdirp": "0.5.x",
     "node-human-logger": "git://github.com/tilap/node-human-logger#v0.1.0",
