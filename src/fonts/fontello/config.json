@@ -7,6 +7,12 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin",
+      "code": 59401,
+      "src": "fontelico"
+    },
+    {
       "uid": "3e617d8049807e128c80d0344ba09e37",
       "css": "rss",
       "code": 59396,
@@ -29,6 +35,12 @@
       "css": "soundcloud",
       "code": 59395,
       "src": "entypo"
+    },
+    {
+      "uid": "291e2e127efe7a6bc580af6d3ead3771",
+      "css": "foursquare",
+      "code": 59397,
+      "src": "mfglabs"
     },
     {
       "uid": "aa18911cd641967c899c575aeb80cd7e",
