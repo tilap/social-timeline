@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   var jsonData = 'https://spreadsheets.google.com/feeds/list/' + googleSpreadsheetId + '/od6/public/values?alt=json';
   function alertError(message) {
-    $('.message').html(message).addClass('error');
+    $('.message').html(message).addClass('error').show();
   }
 
   $.getJSON( jsonData, function( spreadsheet ) {
@@ -67,6 +67,10 @@ $(document).ready(function() {
           item.title = 'Article de blog: ' + item.content;
           item.content = item.extra;
           item.content = item.content.replace(replacePattern, '<a href="$1" target="_blank">$1</a>');
+        break;
+        case 'foursquare':
+          item.title = 'Checkin!';
+          item.content = item.content + '<br><img src="' + item.extra + '">';
         break;
         default :
 
