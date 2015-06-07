@@ -7,6 +7,7 @@ var root = __dirname,
 module.exports = {
     contentdata: {
         app: {
+            url: 'http://tilap.github.io/social-timeline/',
             name: 'Social Timeline',
             description: 'Social timeline share your last social network activities',
             copyright: {
